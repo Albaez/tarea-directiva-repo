@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tercer-caso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tercer-caso</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label>DNI</ion-label>
+    <ion-input type="text" placeholder="Ingrese su DNI" [(ngModel)]="dni" (ngModelChange)="showFunction()"></ion-input>
+  </ion-item>
+
+  <ion-item *ngIf="showDNI" style="color: red;">
+    <p>el DNI ingresado fue: {{dni}}</p>
+  </ion-item>
+ 
+</ion-content>

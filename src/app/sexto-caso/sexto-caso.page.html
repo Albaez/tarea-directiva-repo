@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sexto-Caso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">sexto-caso</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div>
+    <span [ngSwitch]="colorButton">
+      <ion-button *ngSwitchCase="'dark'" color="dark">Dark</ion-button>
+      <ion-button *ngSwitchCase="'danger'" color="danger">Danger</ion-button>
+      <ion-button *ngSwitchCase="'primary'" color="primary">Primary</ion-button>
+      <p *ngSwitchDefault  color="warning">color por default</p>
+    </span>
+  </div>
+
+</ion-content>
